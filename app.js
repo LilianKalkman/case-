@@ -9,10 +9,8 @@ function getUserInput(){
  var isValid = validateQuery(input);
  if(isValid){
    fetchData(input);
- } else {
-   // clearInput();
- }
-}
+  }
+};
 
 function fetchData(query){
   fetch(`https://api.journa.be/search/authors/${query}?limit=15`)
@@ -22,9 +20,6 @@ function fetchData(query){
     .then(data => {
       console.log(data);
       renderHtml(data);
-    })
-    .then(function(){
-      // clearInput();
     })
     .catch(error => console.log(error))
 }
@@ -54,7 +49,6 @@ function validateQuery(query){
     return true
   };
 }
-
 
 function clearInput(){
   input.value = '';
