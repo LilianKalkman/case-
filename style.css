@@ -1,3 +1,8 @@
+body {
+  background-color: rgba(184, 183, 177, 0.3);
+}
+
+
 .validation {
   color: red;
 }
@@ -20,11 +25,12 @@
 
 .searchInput {
   width: 70%;
+  height: 20px;
 }
 
 input:focus {
   box-shadow: 0 0 5px rgba(221, 159, 179,1);
-  border: 1px solid rgba(221, 159, 179,1);
+  border: 3px solid rgba(221, 159, 179,1);
 }
 
 .author__listitem {
@@ -36,6 +42,8 @@ input:focus {
   width: 250px;
   text-align: center;
   animation: slideIn 1s ease;
+  color: black;
+  background-color: rgba(35, 35, 38, 0.1);
 }
 
 .article-count {
@@ -48,7 +56,8 @@ input:focus {
 }
 
 mark {
-  background-color: rgb(221, 159, 179);
+  background-color: rgba(221, 159, 179, 0.8);
+  color: black;
 }
 
 
