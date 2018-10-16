@@ -18,7 +18,7 @@ function getUserInput2(){
   if(isValid){
     fetchData(i);
    }
-}
+};
 
 function fetchData(query){
   fetch(`https://api.journa.be/search/authors/${query}?limit=15`)
@@ -58,11 +58,7 @@ function validateQuery(query){
   };
 }
 
-function clearInput(){
-  input.value = '';
-};
 
 input.addEventListener('change', getUserInput);
-input.addEventListener('keyup', getUserInput);
-
+// input.addEventListener('keyup', getUserInput);
 submitBtn.addEventListener('click', getUserInput2);

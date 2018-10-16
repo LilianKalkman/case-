@@ -28,6 +28,13 @@ body {
   height: 20px;
 }
 
+.subitBtn {
+  height: 25px;
+  color: rgb(221, 159, 179);
+  border-color: rgb(221, 159, 179);
+  background-color: white;
+}
+
 input:focus {
   box-shadow: 0 0 5px rgba(221, 159, 179,1);
   border: 1px solid rgba(221, 159, 179,1);
