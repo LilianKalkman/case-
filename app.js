@@ -12,6 +12,14 @@ function getUserInput(){
   }
 };
 
+function getUserInput2(){
+  var i = input.value;
+  var isValid = validateQuery(i);
+  if(isValid){
+    fetchData(i);
+   }
+}
+
 function fetchData(query){
   fetch(`https://api.journa.be/search/authors/${query}?limit=15`)
     .then(response => {
@@ -56,4 +64,5 @@ function clearInput(){
 
 input.addEventListener('change', getUserInput);
 input.addEventListener('keyup', getUserInput);
-submitBtn.addEventListener('click', getUserInput);
+
+submitBtn.addEventListener('click', getUserInput2);

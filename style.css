@@ -30,13 +30,13 @@ body {
 
 input:focus {
   box-shadow: 0 0 5px rgba(221, 159, 179,1);
-  border: 3px solid rgba(221, 159, 179,1);
+  border: 1px solid rgba(221, 159, 179,1);
 }
 
 .author__listitem {
   list-style: none;
-  border: 1px solid rgb(221, 159, 179);
-  padding: 10px;
+  border: 2px solid rgb(221, 159, 179);
+  padding: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 250px;
